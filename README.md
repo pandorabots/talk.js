@@ -1,7 +1,7 @@
-Talk.js
+talk.js
 =======
 
-Talk to a Pandorabot directly from your browser. The talk.js keeps track of your users by storing a cookie, allowing predicates to persist across sessions.
+Talk to a Pandorabot directly from your browser. The talk.js plugin keeps track of your users by storing a cookie, allowing predicates to persist across sessions.
 
 Requirements
 ------------
