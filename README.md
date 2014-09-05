@@ -1,7 +1,7 @@
 Talk.js
 =======
 
-Talk to a Pandorabot directly from your browser. Talk.js keeps track of your users by storing a cookie, allowing predicates to persist across sessions.
+Talk to a Pandorabot directly from your browser. The talk.js keeps track of your users by storing a cookie, allowing predicates to persist across sessions.
 
 Requirements
 ------------
@@ -15,7 +15,7 @@ NOTE: Because this is browser-side code, your user key will be visible to the pu
 Example use
 ------------
 
-```
+```javascript
 var pb = new Pandorabot("aiaas.pandorabots.com", YOUR_USERNAME, YOUR_BOTNAME, YOUR_USER_KEY);
 pb.talk("Hello", function(data) {
   var response = data["responses"];
@@ -23,5 +23,5 @@ pb.talk("Hello", function(data) {
 });
 ```
 
-For a more detailed look, take a look at the [live demo](http://link-to-demo.com), or start with the boilerplate example included with this repository.  
+For a more detailed look, take a look at the boilerplate example included with this repository.  
 
