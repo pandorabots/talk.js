@@ -6,7 +6,7 @@ Talk to a Pandorabot directly from your browser. The talk.js plugin keeps track 
 Requirements
 ------------
 
-You can obtain a username and user key by signing up for a plan at the [Pandorabots Developer Portal](https://developer.pandorabots.com). 
+You can obtain an `app_id` and `user_key` by signing up for a plan at the [Pandorabots Developer Portal](https://developer.pandorabots.com). 
 
 You can create and compile a bot using the cURL commands found in the [Pandorabots API Documentation](https://developer.pandorabots.com/docs).
 
@@ -16,7 +16,7 @@ Example use
 ------------
 
 ```javascript
-var pb = new Pandorabot("aiaas.pandorabots.com", YOUR_USERNAME, YOUR_BOTNAME, YOUR_USER_KEY);
+var pb = new Pandorabot("aiaas.pandorabots.com", YOUR_APP_ID, YOUR_BOTNAME, YOUR_USER_KEY);
 pb.talk("Hello", function(data) {
   var response = data["responses"];
   console.log(response);

@@ -24,9 +24,9 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-function Pandorabot(host, username, botname, user_key) {
+function Pandorabot(host, app_id, botname, user_key) {
     this.host = host;
-    this.username = username;
+    this.app_id = app_id;
     this.botname = botname;
     this.user_key = user_key;
     this.sessionid = "";
@@ -42,7 +42,7 @@ Pandorabot.prototype.talk = function(input, fn) {
         var c = Math.round(Math.random() * 1000001);
         document.cookie = "pb_client_name=" + c;
     }
-    var url = this.protocol + "://" + this.host + "/talk/" + this.username + "/" + this.botname + "?user_key=" + this.user_key + "&client_name=" + this.client_name + "&sessionid=" + this.sessionid + "&input=" + encodeURIComponent(input);
+    var url = this.protocol + "://" + this.host + "/talk/" + this.app_id + "/" + this.botname + "?user_key=" + this.user_key + "&client_name=" + this.client_name + "&sessionid=" + this.sessionid + "&input=" + encodeURIComponent(input);
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url, true);
     xhr.send();
