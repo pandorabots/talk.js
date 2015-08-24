@@ -1,1 +1,1 @@
-> **NOTE:** this repository is no longer being maintained. For an example of how to talk to the Pandorabots Talk API from the browser, please see (this gist)[https://gist.github.com/djfdev/150192b3c3934516f4cc].
+> **NOTE:** this repository is no longer being maintained. For an example of how to talk to the Pandorabots Talk API from the browser, please see [this gist](https://gist.github.com/djfdev/150192b3c3934516f4cc).
